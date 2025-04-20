@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Runco Motivation</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #999898;
+      color: rgb(99, 99, 99);
+      padding: 20px;
+      text-align: center;
+    }
+
+    .navbar ul {
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: white;
+    }
+
+    section {
+      padding: 20px;
+      color: white;
+      margin-bottom: 10px;
+    }
+
+    p {
+      cursor: pointer;
+      margin: 10px 0;
+    }
+
+    input {
+      margin: 10px 0;
+      padding: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Can't stop, Won't stop!</h1>
+    <div class="navbar">
+      <nav>
+        <ul>
+          <li><a href="about.html">Home</a></li>
+                <li><a href="Gear.html">Gear</a></li>
+                <li><a href="content.html">Contact</a></li>
+                <li><a href="index.html">Material</a></li>
+                <li><a href="jquery.html">Motivation</a></li>
+                <li><a href="bootstrap.html">How Close are you?</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main content -->
+  <section style="background-color: #1e88c6;">
+    <p id="p1">Run of the day?</p>
+    <p>What's holding you back?</p>
+  </section>
+
+  <section style="background-color: #bd852a;">
+    <p>Find your itch...</p>
+    <p>Lazy?</p>
+    <p>"Not enough time"</p>
+    <p>No one to run with?</p>
+    <p>Where do I start?</p>
+  </section>
+
+  <!-- Contact Form -->
+  <section style="background-color: #001b7b;">
+    <h2>Want to reach out to a coach?</h2>
+    <label>Name:</label><br>
+    <input type="text" name="name"><br>
+    <label>Email:</label><br>
+    <input type="text" name="email"><br>
+  </section>
+  <img src="https://images.unsplash.com/photo-1619319161476-2d60670a105b?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Z3V5JTIwcnVubmluZyUyMHdpdGglMjBoZWFkcGhvbmVzfGVufDB8fDB8fHww" alt="Runners on a scenic trail">
+
+  <!-- Scripts -->
+  <script>
+    // Hover alert on #p1
+    $(document).ready(function(){
+      $("#p1").hover(
+        function() {
+          alert("Today's run is 3.2 Miles!");
+        },
+        function() {
+          alert("Good luck!");
+        }
+      );
+
+      // Click to hide any paragraph
+      $("p").click(function() {
+        $(this).fadeOut();
+      });
+
+      // Input focus/blur color change
+      $("input").focus(function(){
+        $(this).css("background-color", "yellow");
+      });
+      $("input").blur(function(){
+        $(this).css("background-color", "green");
+      });
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Running Progress Tracker</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    body {
+      background-color: #f4f6f9;
+    }
+
+    .navbar {
+      background-color: #1e3d59;
+      border: none;
+    }
+
+    .navbar .navbar-brand,
+    .navbar .nav > li > a {
+      color: #ffffff !important;
+    }
+
+    .jumbotron {
+      background-color: #4caf50;
+      color: white;
+    }
+
+    .progress-bar {
+      background-color: #2196f3;
+    }
+
+    .alert-success {
+      background-color: #dff0d8;
+      color: #3c763d;
+    }
+
+    h3 {
+      color: #1e3d59;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">RUN CO</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="about.html">Home</a></li>
+      <li><a href="Gear.html">Gear</a></li>
+      <li><a href="content.html">Contact</a></li>
+      <li><a href="index.html">Material</a></li>
+      <li><a href="jquery.html">Motivation</a></li>
+      <li><a href="bootstrap.html">How Close are you?</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="jumbotron text-center">
+  <h1>Your Running Goals</h1>
+  <p>See how close you are to hitting your next milestone with us!</p> 
+</div>
+
+<div class="container">
+  <h2>Your Progress Bar</h2>
+  <div class="progress">
+    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+      <span class="sr-only">70% Complete</span>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>Distance Covered</h3>
+      <p>You're just a few miles away from your target. Keep pushing!</p>
+      <p>Consistency is key — and you're nailing it.</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Pace Progress</h3>
+      <p>Your average pace has improved by 12% this month. Way to go!</p>
+      <p>Stick with us for smart tracking and real progress.</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Weekly Goals</h3>        
+      <p>You’ve hit 4 out of 5 runs this week. Almost there!</p>
+      <p>One more run and you crush your weekly plan!</p>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <h2>Status Update</h2>
+  <div class="alert alert-success">
+    <strong>Great Job!</strong> You’re 90% of the way to your goal. Let’s finish strong!
+  </div>
+</div>
+
+</body>
+</html>
